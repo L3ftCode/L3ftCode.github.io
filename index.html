@@ -1,1 +1,266 @@
-"hello w0rld" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">   
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <title>Netscape Style Website</title>
+    <style>
+        
+        body {
+            background-color: #ffcccc; /* Lighter pink background */
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', sans-serif; /* Using Press Start 2P font */
+        }
+
+
+        .tab {
+            position: absolute;
+            top: -8px; /* Adjust as needed */
+            right: -56px; /* Align to the right side of the box */
+            width: 40px;
+            height: 40px;
+            transition: width 0.5s, right 0.5s;
+            border: 8px solid #000; /* Pixelated outline */
+            z-index: 1; /* Ensure tabs are above shadow */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .tab_color {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ccbdbd; 
+            z-index: 1; /* Ensure tabs are above shadow */
+        }
+        .tab:hover {
+            width: 200px;
+            right: -216px; /* Adjust the position to extend towards the right */
+        }
+
+        .tab:nth-child(n + 2) {
+            top: calc(20px + (50px * (n - 1))); /* Adjust position for tabs after the first one */
+        }
+
+        .container {
+            max-width: 2000px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #ccbdbd; /* Grey background for boxes */
+            float: left;
+            margin: 40px;
+            border: 8px solid #000; /* Pixelated outline */
+        }
+
+        .shadow {
+            position: absolute;
+            top: 6px;
+            bottom: -4px;
+            left: 6px;
+            right: -4px;
+            width: calc(100% + 8px);
+            height: calc(100% + 8px);
+            background-color: rgba(0, 0, 0, 0.5); /* Dark pixelated shadow color */
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        div.ex2 {
+            padding: 20px;
+            margin-right: 200px; /* Adjust margin to wrap around the rounded square */
+        }
+
+    .rounded_square {
+        position: fixed;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        width: 150px;
+        height: 150px;
+        background-color: #ffffff; /* White background */
+        border: 8px solid #000; /* Border */
+        overflow: hidden; /* Ensure the image does not overflow */
+    }
+    .rounded_square_color {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ccbdbd; 
+        z-index: 1;/* Ensure the image does not overflow */
+    }
+    .rounded_square_shadow {
+        position: fixed;
+        top: 30px; /* Adjust as needed */
+        right: 16px; /* Adjust as needed */
+        width: 160px;
+        height: 160px;
+        background-color: rgba(0, 0, 0, 0.5); /* White background */
+        z-index: -1;
+    }
+    .rounded_square img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+    .contact-form {
+        padding: 20px;
+        margin: 50px auto; 
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .contact_shadow {
+        position: fixed;
+        top: 30px; /* Adjust as needed */
+        right: 16px; /* Adjust as needed */
+        width: 160px;
+        height: 160px;
+        background-color: rgba(0, 0, 0, 0.5); /* White background */
+        z-index: -1;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%; /* Make inputs and textarea full width */
+        padding: 10px; /* Add padding for better readability */
+        border: 8px solid #000; /* Add border for input fields */
+        color: white; /* Set text color to white */
+        background-color: #36454F; /* Set field color to black */
+        font-size: 12px;
+    }
+    .contact-form input[type="submit"],
+    .contact-form textarea{
+        border: 8px solid #000; /* Add border for input fields */
+        font-family: 'Press Start 2P', sans-serif;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="rounded_square">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        <div class="rounded_square_shadow"></div>
+        <div class="rounded_square_color"></div>
+    </div>
+    <div class="ex2">
+        <h2>Ryan Pendergrast</h2>
+        Software & Firmware Automation Engineer<br /><br />
+        Hi, my name is Ryan. I am a Software and Firmware Automation Engineer.<br />
+        I have over 5 years of experience of verification in Agile environments. <br />
+        From PCR diagnostic machines to autonomous surgical robotics,<br />
+        to autonomous surgical robotics
+    </div>
+
+
+    <div class="container">
+        <div class="box">
+            <h1>Here are some skills I guess I got</h1>
+            <div class="shadow"></div>
+            <div class="tab" style="top: -8px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 40px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 88px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 136px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 184px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+        </div>
+        <div class="box">
+            <h1>These are the maybe 2 to 3 most important skills</h1>
+            <div class="shadow"></div>
+            <div class="tab" style="top: -8px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 40px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 88px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 136px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+      </div>
+        <div class="box">
+            <h1>Other stuff goes here</h1>
+            <div class="shadow"></div>
+            <div class="tab" style="top: -8px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 42px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>      
+        </div>
+        <div class="box">
+            <h1>And we wrap it up with this one</h1>
+            <div class="shadow"></div>
+            <div class="tab" style="top: -8px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 42px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>
+            <div class="tab" style="top: 92px;">
+                <div class ="tab_color"></div>
+                <div class="shadow" ></div>
+            </div>        
+        </div>
+    </div>
+
+    <script>
+        function toggleTabWidth(tab) {
+            tab.style.width = tab.style.width === '40px' ? '200px' : '40px';
+            tab.style.right = tab.style.width === '40px' ? '-56px' : '-216px';
+        }
+    </script>
+
+
+    <section>
+        <div class="contact-form">
+            <!-- Your contact form goes here -->
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
