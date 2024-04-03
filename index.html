@@ -83,24 +83,24 @@
             margin-right: 200px; /* Adjust margin to wrap around the rounded square */
         }
 
-    .rounded_square {
+    .floating_square {
         position: fixed;
         top: 20px; /* Adjust as needed */
         right: 20px; /* Adjust as needed */
         width: 150px;
         height: 150px;
-        background-color: #ffffff; /* White background */
+        background-color: #ccbdbd; /* White background */
         border: 8px solid #000; /* Border */
         overflow: hidden; /* Ensure the image does not overflow */
     }
-    .rounded_square_color {
+    .floating_square_color {
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: #ccbdbd; 
         z-index: 1;/* Ensure the image does not overflow */
     }
-    .rounded_square_shadow {
+    .floating_square_shadow {
         position: fixed;
         top: 30px; /* Adjust as needed */
         right: 16px; /* Adjust as needed */
@@ -109,7 +109,7 @@
         background-color: rgba(0, 0, 0, 0.5); /* White background */
         z-index: -1;
     }
-    .rounded_square img {
+    .floating_square img {
         width: 100%;
         height: 100%;
         object-fit: cover; /* Maintain aspect ratio and cover the container */
@@ -149,18 +149,17 @@
     </style>
 </head>
 <body>
-    <div class="rounded_square">
+    <div class="floating_square">
         <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-        <div class="rounded_square_shadow"></div>
-        <div class="rounded_square_color"></div>
+        <div class="floating_square_shadow"></div>
+        <div class="floating_square_color"></div>
     </div>
     <div class="ex2">
         <h2>Ryan Pendergrast</h2>
         Software & Firmware Automation Engineer<br /><br />
         Hi, my name is Ryan. I am a Software and Firmware Automation Engineer.<br />
         I have over 5 years of experience of verification in Agile environments. <br />
-        From PCR diagnostic machines to autonomous surgical robotics,<br />
-        to autonomous surgical robotics
+        From PCR diagnostic machines to autonomous surgical robotics.<br />
     </div>
 
 
